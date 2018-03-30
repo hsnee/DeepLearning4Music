@@ -1,0 +1,15 @@
+Chord Progression 1
+___________________
+
+Key: G Minor
+Intended BPM: 85
+
+Chords:   G Minor 7 (G-7), C Major 7 (CM7), C Minor 7(C-7), C Dominant over D (C7/D), G Minor 7(G-7), C Major 7(CM7), C Minor 7 (C-7), D Dominant with Sharp 9 (D7#9)  
+
+Chord Progression 2
+___________________
+ 
+Key: A Minor
+Intended BPM: 60
+
+Chords:  A Minor 9 (A-9), D Major over E (D/E), G Minor 9 (G-9), C Dominant (C7), A Minor 9 (A-9), D Major over E (D/E), G Minor 9 (G-9), C Dominant (C7)
