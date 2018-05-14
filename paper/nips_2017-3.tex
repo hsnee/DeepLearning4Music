@@ -1,0 +1,114 @@
+\documentclass{article}
+
+% if you need to pass options to natbib, use, e.g.:
+% \PassOptionsToPackage{numbers, compress}{natbib}
+% before loading nips_2017
+%
+% to avoid loading the natbib package, add option nonatbib:
+% \usepackage[nonatbib]{nips_2017}
+
+\usepackage{nips_2017}
+
+% to compile a camera-ready version, add the [final] option, e.g.:
+% \usepackage[final]{nips_2017}
+
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+\usepackage{hyperref}
+\title{Deep Learning for Music Generation}
+
+% The \author macro works with any number of authors. There are two
+% commands used to separate the names and addresses of multiple
+% authors: \And and \AND.
+%
+% Using \And between authors leaves it to LaTeX to determine where to
+% break the lines. Using \AND forces a line break at that point. So,
+% if LaTeX puts 3 of 4 authors names on the first line, and the last
+% on the second line, try using \AND instead of \And before the third
+% author name.
+
+\author{
+  Almoubayyed, Husni\\
+  Department of Computer Science\\
+  Cranberry-Lemon University\\
+  Pittsburgh, PA 15213 \\
+  \texttt{hippo@cs.cranberry-lemon.edu} \\
+  %% examples of more authors
+   \And
+  Yizhou, He \\
+  Affiliation\\
+}
+
+\begin{document}
+% \nipsfinalcopy is no longer used
+\maketitle
+
+
+
+\section{Proposal}
+
+\paragraph{}We plan to explore deep learning algorithms to generate music, and compare it to the already existing state-of-the-art technologies.
+\paragraph{}
+Often, machine learning focuses on data that is not as interpretable or expressive as music.  We would like to explore how machines represent music using cutting edge machine learning models.
+\paragraph{}
+There are several existing studies on this, the most well-known being a tool developed by Google Research using Long Short Term Memory (LSTM) and recurrent neural network (RNN) architectures, that can be trained on single streams of structured midi files. Other tools such as DeepJazz, BachBot, GRUV, WaveNet, and FlowMachines [references] also existing with varying differences such as the ability to be trained on regular audio files (wav and mp3), being particularly optimized to certain types of music, network architectures and underlying software. 
+\paragraph{}
+[proposed idea + approach + implementation (tensorflow?)]
+\paragraph{}
+[timeline/plan:] We plan on (a) acquiring and organizing data in the form of midi files representing musical structure of electronic music, (b) designing an LSTM [?] architecture to learn how to generate music based on the last 10 [?] seconds of a particular song and using its own outputs as inputs for the next prediction. We envision that this will be a classification problem where the network classifies which note (or lack of notes) to hit next. (c) train and evaluate the LSTM network on the obtained data; and (d) compare the output to that of existing tools. Magenta in particular provides the option to be trained on a user-inputted dataset, which makes it easier to compare to. We anticipate that each part will take roughly a week. [?]
+
+\section*{References}
+
+\medskip
+
+\small
+ 
+[1] Kim, J. (n.d.).\ (March 25, 2018) DeepJazz [Computer software]. \href{url}{https://deepjazz.io/}
+
+[2] Liang, F., Gotham, M., Tomczak, M., Johnson, M.\ \& Shotton, J. (n.d.).\ (March 25, 2018) Bach Bot [Computer software]. \href{url}{https://www.bachbot.com}
+
+[3] Oord, A. V., Dieleman, S., Zen, H., Simonyan, K., Vinyals, O., Graves, A., . . . Kavukcuoglu, K. (n.d.).\ (March 25, 2018) WaveNet: A Generative Model For Raw Audio. \href{url}{https://deepmind.com/blog/wavenet-generative-model-raw-audio/}
+
+[4]Pachet, F., Roy, P., \ \& Ghedini, F.\ (2013). Creativity through Style Manipulation: The Flow Machines project. Marconi Institute for Creativity Conference, 80.
+
+[5]Sidor, S. (n.d.).\ (March 25, 2018) Magenta: Make Music and Art Using Machine Learning.  \href{url}{https://magenta.tensorflow.org/}
+
+[6]Tang, A.\ \& Shekar, P. (n.d.).\ (March 25, 2018)Gruv [Computer software].  \href{url}{www.gruv.io}
+
+[7]Sidor, S.\ (March 25, 2018) Magenta: Make Music and Art Using Machine Learning. \href{url}{https://magenta.tensorflow.org/}
+
+[8]Oord, A. V., Dieleman, S., Zen, H., Simonyan, K., Vinyals, O., Graves, A., . . . Kavukcuoglu, K. \ (March 25, 2018). WaveNet: A Generative Model For Raw Audio.  \href{url}{https://deepmind.com/blog/wavenet-generative-model-raw-audio/}
+
+[9]Boulanger-Lewandowski, N., Bengio, Y.\ \& Vincent, P. \ (2012). Modeling Temporal Dependencies in High-Dimensional Sequences: Application to Polyphonic Music Generation and Transcription. In Proceedings of the 29th International Conference on Machine Learning. Edinburgh. \href{url}{doi:http://www-etud.iro.umontreal.ca/~boulanni/ICML2012.pdf}
+
+[10]Huang, A.\ \& Wu, R.\ (2016). Deep Learning for Music. \href{url}{https://cs224d.stanford.edu/reports/allenh.pdf.}
+
+[11]Eck, D.\ \& Schmidhuber, J.\ (2002). USI-SUPSI Instituto Dalle Molle(Tech. No. IDSIA-07-02). \href{url}{doi:http://people.idsia.ch/~juergen/blues/IDSIA-07-02.pdf}
+
+[12]Liu, T. I.,\ \& Ramakrishnan, B. \ (2014). Bach in 2014: Music Composition with Recurrent Neural Network. \href{url}{https://arxiv.org/abs/1412.3191v2.}
+
+[13]Franklin, J. A.\ (2006). Recurrent Neural Networks for Music Computation. Journal on Computing, 18(3), 321-338. \href{url}{http://cs.smith.edu/~jfrankli/papers/Informs2006\_18\_03\_0321.pdf}
+
+[14]Dong, H., Hsiao, W., Yang, L.,\ \& Yang, Y.\ (2017). MuseGAN: Multi-track Sequential Generative Adversarial Networks for Symbolic Music Generation and Accompaniment. \href{url}{https://arxiv.org/abs/1709.06298.}
+
+[15]Goodfellow, I. J., Pouget-Abadie, J., Mirza, M., Xu, B., Warde-Farley, D., Ozair, S., . . . Bengio, Y. \ (2014). Generative Adversarial Nets. Advances in Neural Information Processing Systems.  \href{url}{http://papers.nips.cc/paper/5423-generative-adversarial-nets.pdf}
+
+[16]Radford, A., Metz, L.,\ \& Chintala, S.\ (2016). Unsupervised Representation Learning with Deep Constitutional Generative Adversarial Networks. \href{url}{https://arxiv.org/pdf/1511.06434.pdf.}
+
+[17]Rumelhart, D. E., Hinton, G. E.,\ \& Williams, R. J.\ (1986). Learning representations by back-propagating errors. Nature, 323(6088), 533-536.  \href{url}{doi:10.1038/323533a0}
+
+[18]Hochreiter, S.,\ \& Schmidhuber, J.\ (1997). Long Short-Term Memory. Neural Computation, 9(8), 1735-1780. \href{url}{http://www.bioinf.jku.at/publications/older/2604.pdf}
+
+[19]Chen, C. J.,\ \& Miikkulainen, R.\ (2001). Creating Melodies with Evolving Recurrent Neural Networks. In Proceedings of the 2001 International Joint Conference on Neural Networks. \href{url}{http://nn.cs.utexas.edu/downloads/papers/chen.ijcnn01.pdf}
+
+[20]Chollet, F.\ (2015). Keras. \href{url}{https://github.com/keras-team/keras}
+
+[21]Bjorndalen, O.\ (2013). Mido (Version 1.2.8). \href{url}{https://mido.readthedocs.io}
+
+\end{document}
